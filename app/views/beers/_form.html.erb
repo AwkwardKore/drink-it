@@ -27,12 +27,12 @@
 
   <p>
     <%= f.label :brewery %><br>
-    <%= f.text_field :brewery %>
   </p>
+    <%= f.select :brewery_id, brewery_id_select,{}, class: "form-control" %>
 
   <p>
     <%= f.label :style %><br>
-    <%= f.text_field :style %>
+    <%= f.select :style_id, style_id_select,{}, class: "form-control" %>
   </p>
 
   <p>
