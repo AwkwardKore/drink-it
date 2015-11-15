@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  abv: 1.5
+  flavor: 1.5
+  color: 1.5
+  bubbly: 1.5
+  brewering: MyString
+  style: MyString
+
+two:
+  name: MyString
+  abv: 1.5
+  flavor: 1.5
+  color: 1.5
+  bubbly: 1.5
+  brewering: MyString
+  style: MyString
