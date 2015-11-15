@@ -6,8 +6,8 @@ class CreateBeers < ActiveRecord::Migration
       t.float :flavor
       t.float :color
       t.float :bubbly
-      t.string :brewering
-      t.string :style
+      t.integer :brewery
+      t.integer :style
 
       t.timestamps null: false
     end

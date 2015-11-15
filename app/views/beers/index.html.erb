@@ -7,7 +7,7 @@
     <th>Flavor</th>
     <th>Color</th>
     <th>Bubbly</th>
-    <th>Brewering</th>
+    <th>brewery</th>
     <th>Style</th>
   </tr>
 <% @beers.each do |beer| %>
@@ -18,7 +18,7 @@
     <td><%= beer.flavor %></td>
     <td><%= beer.color %></td>
     <td><%= beer.bubbly %></td>
-    <td><%= beer.brewering %></td>
+    <td><%= beer.brewery %></td>
     <td><%= beer.style %></td>
     <td>
       <%= link_to " Delete ", beer, :method => :delete, :confirm => "Are you sure ?"%>

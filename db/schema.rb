@@ -19,8 +19,8 @@ ActiveRecord::Schema.define(version: 20151115032237) do
     t.float    "flavor"
     t.float    "color"
     t.float    "bubbly"
-    t.string   "brewering"
-    t.string   "style"
+    t.integer  "brewery"
+    t.integer  "style"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
