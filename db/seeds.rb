@@ -1,3 +1,4 @@
+
 Brewery.create!([
   {name: "Sierra madre"},
   {name: "Modelo"},
