@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <h5>Name:</h5>
+  <%= @beer.name %>
+</p>
+
+<p>
+  <h5>image</h5>
+  <%= image_tag(@beer.image) %>
+</p>
+
+<p>
+  <h5>Abv:</h5>
+  <%= @beer.abv %>
+</p>
+
+<p>
+  <h5>Flavor:</h5>
+  <%= @beer.flavor %>
+</p>
+<p>
+  <h5>Color:</h5>
+  <%= @beer.color %>
+</p>
+<p>
+  <h5>Bubbly:</h5>
+  <%= @beer.bubbly %>
+</p>
+<p>
+  <h5>Brewery:</h5>
+  <%= @beer.brewery.name %>
+</p>
+<p>
+  <h5>Style:</h5>
+  <%= @beer.style.name %>
+</p>
+
+<%= link_to 'Back', beers_path %>

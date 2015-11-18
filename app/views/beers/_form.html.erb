@@ -1,0 +1,46 @@
+<%= form_for(@beer) do |f| %>
+
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.label :image %><br>
+    <%= f.file_field :image %>
+  </p>
+
+  <p>
+    <%= f.label :abv %><br>
+    <%= f.text_field :abv %>
+  </p>
+
+  <p>
+    <%= f.label :color %><br>
+    <%= f.text_field :color %>
+  </p>
+
+  <p>
+    <%= f.label :flavor %><br>
+    <%= f.text_field :flavor %>
+  </p>
+
+  <p>
+    <%= f.label :bubbly %><br>
+    <%= f.text_field :bubbly %>
+  </p>
+
+  <p>
+    <%= f.label :brewery %><br>
+  </p>
+    <%= f.select :brewery_id, brewery_id_select,{}, class: "form-control" %>
+
+  <p>
+    <%= f.label :style %><br>
+    <%= f.select :style_id, style_id_select,{}, class: "form-control" %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

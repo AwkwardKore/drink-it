@@ -1,0 +1,36 @@
+<h1>Beers</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Image</th>
+    <th>Abv</th>
+    <th>Flavor</th>
+    <th>Color</th>
+    <th>Bubbly</th>
+    <th>brewery</th>
+    <th>Style</th>
+  </tr>
+<% @beers.each do |beer| %>
+
+  <tr>
+    <td><%= beer.name %></td>
+    <td><%= image_tag(beer.image) %></td>
+    <td><%= beer.abv %></td>
+    <td><%= beer.flavor %></td>
+    <td><%= beer.color %></td>
+    <td><%= beer.bubbly %></td>
+    <td><%= beer.brewery.name %></td>
+    <td><%= beer.style.name %></td>
+    <td>
+      <%= link_to " Delete ", beer, :method => :delete, :confirm => "Are you sure ?"%>
+      <%= link_to ' Edit ', edit_beer_path(beer) %>
+    </td>
+  </tr>
+
+<% end %>
+</table>
+
+  <br>
+
+<%= link_to 'New', new_beer_path %>

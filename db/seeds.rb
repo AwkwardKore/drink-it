@@ -1,7 +1,79 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+Beer.create!([
+  {name: "Bohemia Bock", abv: 0.8, flavor: 0.9, color: 1.0, bubbly: 1.0, brewery_id: 3, style_id: 6, image: "1.jpg"},
+  {name: "Bohemia Chocolate Stout", abv: 0.7, flavor: 0.9, color: 1.0, bubbly: 1.0, brewery_id: 3, style_id: 3, image: "2.jpg"},
+  {name: "Bohemia Clasica", abv: 0.67, flavor: 0.5, color: 0.0, bubbly: 0.3, brewery_id: 3, style_id: 1, image: "3.jpg"},
+  {name: "Bohemia Obscura", abv: 0.7, flavor: 0.7, color: 1.0, bubbly: 0.5, brewery_id: 3, style_id: 1, image: "4.jpg"},
+  {name: "Bohemia Weizen", abv: 0.67, flavor: 0.7, color: 1.0, bubbly: 1.0, brewery_id: 3, style_id: 5, image: "5.jpg"},
+  {name: "Carta Blanca", abv: 0.5, flavor: 0.3, color: 0.0, bubbly: 0.3, brewery_id: 3, style_id: 1, image: "6.jpg"},
+  {name: "Carta Blanca Exquisita", abv: 0.55, flavor: 0.5, color: 0.0, bubbly: 0.5, brewery_id: 3, style_id: 1, image: "7.png"},
+  {name: "Carta Blanca Light", abv: 0.47, flavor: 0.3, color: 0.0, bubbly: 0.5, brewery_id: 3, style_id: 1, image: "7.png"},
+  {name: "Casta Cervez Bruna", abv: 0.0, flavor: 0.7, color: 1.0, bubbly: 0.3, brewery_id: 3, style_id: 2, image: "7.png"},
+  {name: "Casta Cervez oscura", abv: 0.67, flavor: 0.7, color: 1.0, bubbly: 0.8, brewery_id: 3, style_id: 2, image: "8.jpg"},
+  {name: "Chihuahua", abv: 0.0, flavor: 0.3, color: 0.0, bubbly: 0.5, brewery_id: 3, style_id: 1, image: "7.png"},
+  {name: "Conmemorativa", abv: 0.7, flavor: 0.5, color: 0.0, bubbly: 0.3, brewery_id: 3, style_id: 1, image: "7.png"},
+  {name: "Dos Equis Azul", abv: 0.8, flavor: 0.3, color: 0.0, bubbly: 0.3, brewery_id: 3, style_id: 4, image: "9.jpg"},
+  {name: "Dos Equis Dos-A-Rita", abv: 0.9, flavor: 0.3, color: 0.0, bubbly: 0.3, brewery_id: 3, style_id: 4, image: "10.jpg"},
+  {name: "Dos Equis Invierno Winter Bock", abv: 0.67, flavor: 0.3, color: 1.0, bubbly: 0.5, brewery_id: 3, style_id: 1, image: "1.jpg"},
+  {name: "Dos Equis Roja", abv: 0.47, flavor: 0.3, color: 0.0, bubbly: 0.5, brewery_id: 3, style_id: 1, image: "2.jpg"},
+  {name: "Dos Equis XX Ambar ", abv: 0.47, flavor: 0.3, color: 1.0, bubbly: 0.3, brewery_id: 3, style_id: 1, image: "3.jpg"},
+  {name: "Dos Equis Radler", abv: 0.2, flavor: 0.2, color: 0.0, bubbly: 1.0, brewery_id: 3, style_id: 4, image: "1.jpg"},
+  {name: "Dos Equis XX Lager", abv: 0.55, flavor: 0.3, color: 0.0, bubbly: 0.5, brewery_id: 3, style_id: 1, image: "1.jpg"},
+  {name: "Hochster Premium", abv: 0.55, flavor: 0.3, color: 0.0, bubbly: 0.8, brewery_id: 3, style_id: 1, image: "0.png"},
+  {name: "Indio", abv: 0.5, flavor: 0.7, color: 1.0, bubbly: 0.3, brewery_id: 3, style_id: 1, image: "1.jpg"},
+  {name: "Indio Pilsner Plata", abv: 0.5, flavor: 0.5, color: 1.0, bubbly: 0.3, brewery_id: 3, style_id: 1, image: "1.jpg"},
+  {name: "Kloster", abv: 0.6, flavor: 1.0, color: 1.0, bubbly: 0.5, brewery_id: 3, style_id: 1, image: "0.png"},
+  {name: "Kloster Light", abv: 0.47, flavor: 0.5, color: 0.0, bubbly: 0.3, brewery_id: 3, style_id: 1, image: "1.jpg"},
+  {name: "Noche Buena", abv: 0.8, flavor: 0.7, color: 1.0, bubbly: 0.8, brewery_id: 3, style_id: 1, image: "1.jpg"},
+  {name: "Sol", abv: 0.6, flavor: 0.3, color: 0.0, bubbly: 0.5, brewery_id: 3, style_id: 1, image: "1.jpg"},
+  {name: "Sol 2 ", abv: 0.55, flavor: 0.3, color: 0.0, bubbly: 0.5, brewery_id: 3, style_id: 1, image: "0.png"},
+  {name: "Sol Brava", abv: 0.8, flavor: 0.5, color: 0.0, bubbly: 0.5, brewery_id: 3, style_id: 1, image: "0.png"},
+  {name: "Sol Cero ", abv: 0.0, flavor: 0.3, color: 0.0, bubbly: 1.0, brewery_id: 3, style_id: 1, image: "0.png"},
+  {name: "Sol Clamato", abv: 0.3, flavor: 0.3, color: 0.0, bubbly: 1.0, brewery_id: 3, style_id: 1, image: "1.jpg"},
+  {name: "Sol Oscura", abv: 0.8, flavor: 0.7, color: 1.0, bubbly: 0.8, brewery_id: 3, style_id: 1, image: "0.png"},
+  {name: "Sol sal y limon ", abv: 0.6, flavor: 0.7, color: 0.0, bubbly: 0.5, brewery_id: 3, style_id: 1, image: "1.jpg"},
+  {name: "Superior Morena", abv: 0.6, flavor: 0.9, color: 1.0, bubbly: 0.8, brewery_id: 3, style_id: 1, image: "1.jpg"},
+  {name: "Superior Rubia ", abv: 0.6, flavor: 0.7, color: 0.0, bubbly: 0.5, brewery_id: 3, style_id: 1, image: "1.jpg"},
+  {name: "Tecate", abv: 0.6, flavor: 0.5, color: 0.0, bubbly: 1.0, brewery_id: 3, style_id: 1, image: "1.jpg"},
+  {name: "Tecate Light", abv: 0.47, flavor: 0.3, color: 0.0, bubbly: 0.3, brewery_id: 3, style_id: 1, image: "1.jpg"},
+  {name: "Tecate Titanium ", abv: 0.7, flavor: 0.5, color: 0.0, bubbly: 0.5, brewery_id: 3, style_id: 1, image: "1.jpg"},
+  {name: "Cañon del Huajuco ", abv: 1.0, flavor: 1.0, color: 1.0, bubbly: 1.0, brewery_id: 1, style_id: 6, image: "0.png"},
+  {name: "Ocho Reales ", abv: 0.7, flavor: 1.0, color: 1.0, bubbly: 1.0, brewery_id: 1, style_id: 2, image: "1.jpg"},
+  {name: "Ocho Reales Porter", abv: 0.7, flavor: 0.5, color: 1.0, bubbly: 0.8, brewery_id: 1, style_id: 3, image: "0.png"},
+  {name: "Chipinque Red", abv: 0.6, flavor: 0.9, color: 1.0, bubbly: 0.3, brewery_id: 1, style_id: 2, image: "0.png"},
+  {name: "El Fraile", abv: 0.8, flavor: 1.0, color: 1.0, bubbly: 1.0, brewery_id: 1, style_id: 3, image: "1.jpg"},
+  {name: "El Mirador Dortmunder", abv: 1.0, flavor: 0.3, color: 0.0, bubbly: 0.5, brewery_id: 1, style_id: 5, image: "1.jpg"},
+  {name: "La Huasteca Helles", abv: 0.8, flavor: 0.5, color: 0.0, bubbly: 0.3, brewery_id: 1, style_id: 5, image: "0.png"},
+  {name: "La Silla ", abv: 0.6, flavor: 0.5, color: 1.0, bubbly: 0.8, brewery_id: 1, style_id: 2, image: "0.png"},
+  {name: "Mikkeller Brunch ", abv: 1.0, flavor: 1.0, color: 1.0, bubbly: 1.0, brewery_id: 1, style_id: 3, image: "1.jpg"},
+  {name: "Lost Abbey ", abv: 0.9, flavor: 0.7, color: 1.0, bubbly: 0.8, brewery_id: 1, style_id: 2, image: "1.jpg"},
+  {name: "Westbrook Mexican Cake", abv: 1.0, flavor: 1.0, color: 1.0, bubbly: 1.0, brewery_id: 1, style_id: 3, image: "1.jpg"},
+  {name: "SIerra Madre Light", abv: 0.47, flavor: 0.3, color: 0.0, bubbly: 0.3, brewery_id: 1, style_id: 1, image: "1.jpg"},
+  {name: "Mata Canes", abv: 0.7, flavor: 0.3, color: 1.0, bubbly: 0.3, brewery_id: 1, style_id: 2, image: "0.png"},
+  {name: "Bruvado ", abv: 0.6, flavor: 0.5, color: 0.0, bubbly: 0.5, brewery_id: 2, style_id: 1, image: "1.jpg"},
+  {name: "Mexicali Beer", abv: 0.6, flavor: 0.0, color: 0.0, bubbly: 0.5, brewery_id: 2, style_id: 1, image: "1.jpg"},
+  {name: "Mexicali Dark Beer", abv: 0.7, flavor: 0.7, color: 1.0, bubbly: 0.8, brewery_id: 2, style_id: 1, image: "1.jpg"},
+  {name: "Mexicali Light Beer", abv: 0.47, flavor: 0.5, color: 0.0, bubbly: 0.5, brewery_id: 2, style_id: 1, image: "1.jpg"},
+  {name: "Rio Bravo", abv: 0.47, flavor: 0.5, color: 0.0, bubbly: 0.5, brewery_id: 2, style_id: 1, image: "1.jpg"},
+  {name: "Rio Bravo Pilsener", abv: 0.8, flavor: 1.0, color: 1.0, bubbly: 0.8, brewery_id: 2, style_id: 5, image: "1.jpg"},
+  {name: "Rio Bravo Dark", abv: 0.7, flavor: 0.7, color: 1.0, bubbly: 0.8, brewery_id: 2, style_id: 1, image: "1.jpg"},
+  {name: "Dia de los Muertos", abv: 0.7, flavor: 1.0, color: 1.0, bubbly: 1.0, brewery_id: 2, style_id: 2, image: "1.jpg"},
+  {name: "Death Rides", abv: 0.7, flavor: 0.7, color: 0.0, bubbly: 1.0, brewery_id: 2, style_id: 2, image: "1.jpg"},
+  {name: "Hop On Or Die", abv: 0.8, flavor: 1.0, color: 1.0, bubbly: 1.0, brewery_id: 2, style_id: 2, image: "beer_218794.jpg"},
+  {name: "Immortal Beloved Hefeweizen", abv: 0.7, flavor: 0.5, color: 0.0, bubbly: 0.5, brewery_id: 2, style_id: 5, image: "1.jpg"},
+  {name: "Pay the ferryman", abv: 0.6, flavor: 1.0, color: 1.0, bubbly: 0.8, brewery_id: 2, style_id: 6, image: "1.jpg"},
+  {name: "Ed Hardy Death", abv: 0.8, flavor: 0.5, color: 0.0, bubbly: 0.5, brewery_id: 2, style_id: 1, image: "1.jpg"}
+])
+Brewery.create!([
+  {name: "Sierra madre"},
+  {name: "Modelo"},
+  {name: "Moctezuma"},
+  {name: "Calavera"}
+])
+Style.create!([
+  {name: "Lager"},
+  {name: "Ale"},
+  {name: "Stout"},
+  {name: "Herb"},
+  {name: "Aleman"},
+  {name: "Dunker"}
+])
