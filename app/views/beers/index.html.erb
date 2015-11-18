@@ -10,6 +10,7 @@
     <th>Bubbly</th>
     <th>brewery</th>
     <th>Style</th>
+    <th>Group</th>
   </tr>
 <% @beers.each do |beer| %>
 
@@ -22,6 +23,7 @@
     <td><%= beer.bubbly %></td>
     <td><%= beer.brewery.name %></td>
     <td><%= beer.style.name %></td>
+    <td><%= beer.group %></td>
     <td>
       <%= link_to " Delete ", beer, :method => :delete, :confirm => "Are you sure ?"%>
       <%= link_to ' Edit ', edit_beer_path(beer) %>
