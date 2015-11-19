@@ -35,5 +35,20 @@
   <h5>Style:</h5>
   <%= @beer.style.name %>
 </p>
+<p>
+  <h5>Group:</h5>
+  <%= @beer.group %>
+</p>
 
 <%= link_to 'Back', beers_path %>
+
+<p>
+  <h5>RECOMENDACIONES:</h5>
+</p>
+<% Beer.where(group: "#{@beer.group}").each do |beer| %>
+
+  <div>
+    <%= link_to beer.name, beer_path(beer.id) %>
+  </div>
+
+<% end %>
